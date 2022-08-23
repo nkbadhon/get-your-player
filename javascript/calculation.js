@@ -1,6 +1,7 @@
 // Button press Count
 let x = 0;
 function fivechecker() {
+    alert("You can not add more than 5 players");
     document.getElementById('p1').setAttribute('disabled', "true");
     document.getElementById('p2').setAttribute('disabled', "true");
     document.getElementById('p3').setAttribute('disabled', "true");
@@ -14,7 +15,8 @@ function fivechecker() {
 // Get the player's name:
 document.getElementById('p1').addEventListener('click', function () {
     if (x >= 5) {
-        fivechecker()
+        fivechecker();
+
     }
     else {
         document.getElementById('p1').setAttribute('disabled', "true");
@@ -162,7 +164,7 @@ document.getElementById('Calculate-total-player-cost').addEventListener('click',
     // Getting the typed value of per player
     const perPlayerContainerString = document.getElementById('cost-per-player').value;
     const perPlayerContainer = parseInt(perPlayerContainerString);
-    const totalPlayerCost = perPlayerContainer * 5;
+    const totalPlayerCost = perPlayerContainer * x;
 
     // Getting the Caltulation result field for total player cost 
     const totalPlayerShowField = document.getElementById('total-player-cost')
