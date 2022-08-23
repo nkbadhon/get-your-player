@@ -9,13 +9,21 @@
 </head>
 
 <body>
-    <ol class="text-white">
-        <li class="text-white">a</li>
-        <li class="text-white">s</li>
-        <li class="text-white">d</li>
-        <li class="text-white">f</li>
-        <li class="text-white">g</li>
-    </ol>
+    <button id="btn">Submit</button>
+    <script>
+        let x = 0;
+        function getset() {
+            x++
+            if (x > 4) {
+                document.getElementById('btn').setAttribute("disabled", "true")
+            }
+            else { }
+        }
+        document.getElementById('btn').addEventListener('click', getset());
+        console.log("hi")
+
+
+    </script>
 </body>
 
 </html>
