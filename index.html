@@ -11,122 +11,126 @@
 </head>
 
 <body class="bg-slate-800 text-white">
-    <div class="mb-8 pb-16">
-        <h3 id="heading" class="text-white text-center mt-60 text-9xl">Get Your Player</h3>
-        <p class="text-white text-center text-2xl mt-4">Here you can get famous player from across the world. The
-            price
-            are
-            also resonable. <br> You can get total costing
-            for 5 men team with coach and manager.</p>
-    </div>
-    <!-- Section for player and pricing card -->
-    <section id="Player-section" class="grid grid-cols-4 inline mx-14">
-        <!-- div for players only -->
-        <div class="inline grid grid-cols-3 gap-4 col-span-3">
-            <div class="player-1 pb-8 gap-3 bg-gray-900 border"><img src="players/1.jpg" alt="" srcset="">
-                <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Cristiano Ronaldo</h2>
-                <div class="button-div">
-                    <button id="p1"
-                        class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
-                </div>
-            </div>
-            <div class="player-2 pb-8 gap-3 bg-gray-900 border"><img src="players/2.jpg" alt="" srcset="">
-                <h2 class="text-white font-7 text-center font-bold text-2xl my-3">Kylian Mbappé</h2>
-                <div class="button-div">
-                    <button id="p2"
-                        class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
-                </div>
-            </div>
-            <div class="player-3 pb-8 gap-3 bg-gray-900 border"><img src="players/3.jpg" alt="" srcset="">
-                <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Karim Benzema</h2>
-                <div class="button-div">
-                    <button id="p3"
-                        class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
-                </div>
-            </div>
-            <div class="player-4 pb-8 gap-3 bg-gray-900 border"><img src="players/4.jpg" alt="" srcset="">
-                <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Trent Alexander-Arnold</h2>
-                <div class="button-div">
-                    <button id="p4"
-                        class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
-                </div>
-            </div>
-            <div class="player-5 pb-8 gap-3 bg-gray-900 border"><img src="players/5.jpg" alt="" srcset="">
-                <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Robert Lewandowski</h2>
-                <div class="button-div">
-                    <button id="p5"
-                        class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
-                </div>
-            </div>
-            <div class="player-6 pb-8 gap-3 bg-gray-900 border"><img src="players/6.jpg" alt="" srcset="">
-                <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Riyad Mahrez</h2>
-                <div class="button-div">
-                    <button id="p6"
-                        class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
-                </div>
-            </div>
-            <div class="player-7 pb-8 gap-3 bg-gray-900 border"><img src="players/7.jpg" alt="" srcset="">
-                <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Mohamed Salah</h2>
-                <div class="button-div">
-                    <button id="p7"
-                        class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
-                </div>
-            </div>
-            <div class="player-8 pb-8 gap-3 bg-gray-900 border"><img src="players/8.jpg" alt="" srcset="">
-                <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Luis Suárez</h2>
-                <div class="button-div">
-                    <button id="p8"
-                        class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
-                </div>
-            </div>
-            <div class="player-9 pb-8 gap-3 bg-gray-900 border"><img src="players/9.jpg" alt="" srcset="">
-                <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Luka Modrić</h2>
-                <div class="button-div">
-                    <button id="p9"
-                        class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
-                </div>
-            </div>
-        </div>
-        <!-- selected players and budget -->
+    <header class="mb-8 pb-16">
         <div>
-            <!-- All the selected player -->
-            <div class="grid grid-cols-1 ml-4 bg-gray-900 h-2/5">
-                <h1 class="text-4xl text-center pt-6 h-1/5">Selected--5</h1>
-                <ol id="olist" class="list-decimal ml-10 text-2xl">
-
-                </ol>
-            </div>
-            <!-- Budget -->
-            <div class="my-4 ml-4 bg-gray-900 h-2/5 ">
-                <h1 class="text-4xl text-center pt-6 h-1/5 text-2xl">Budget</h1>
-                <h3 class="inline mx-4 text-2xl">Per Player</h3>
-                <input id="cost-per-player"
-                    class="placeholder:italic placeholder:text-slate-400 bg-gray-900 border border-slate-300 rounded-md py-2 "
-                    placeholder="Enter cost in $" type="number">
-                <button id="Calculate-total-player-cost"
-                    class="bg-sky-500 py-2 rounded px-32 ml-2 mt-4 font-semibold">Calculate</button>
-                <h3 class="inline mx-4 text-2xl font-bold">Player Expense</h3>
-                <h3 class="inline mx-4 mt-1.5 text-2xl font-bold">$<span id="total-player-cost"
-                        class="text-cyan-300">00</span>
-                </h3>
-                <h3 class="inline mx-4 text-2xl mt-4">Manager</h3>
-                <input id="manager-cost"
-                    class="placeholder:italic placeholder:text-slate-400 bg-gray-900 border border-slate-300 rounded-md py-2 mt-4 "
-                    placeholder="Enter cost in $" type="number">
-                <h3 class="inline mx-4 text-2xl mt-4">Coach</h3>
-                <input id="coach-cost"
-                    class="placeholder:italic placeholder:text-slate-400 bg-gray-900 border border-slate-300 rounded-md py-2 mt-4 "
-                    placeholder="Enter cost in $" type="number">
-                <button id="total-cost" class="bg-sky-500 px-28 py-3 rounded ml-1.5 mt-4 font-semibold">Calculate
-                    Total</button>
-                <h3 class="inline mx-4 text-2xl mt-6 font-bold">Total $<span id="total-amount"
-                        class="text-cyan-300">00</span>
-                </h3>
-
-            </div>
+            <h3 id="heading" class="text-white text-center mt-60 text-9xl">Get Your Player</h3>
+            <p class="text-white text-center text-2xl mt-4">Here you can get famous player from across the world. The
+                price
+                are
+                also resonable. <br> You can get total costing
+                for 5 men team with coach and manager.</p>
         </div>
+    </header>
+    <!-- Section for player and pricing card -->
+    <main>
+        <section id="Player-section" class="grid grid-cols-4 inline mx-14">
+            <!-- div for players only -->
+            <div class="inline grid grid-cols-3 gap-4 col-span-3">
+                <div class="player-1 pb-8 gap-3 bg-gray-900 border"><img src="players/1.jpg" alt="" srcset="">
+                    <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Cristiano Ronaldo</h2>
+                    <div class="button-div">
+                        <button id="p1"
+                            class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
+                    </div>
+                </div>
+                <div class="player-2 pb-8 gap-3 bg-gray-900 border"><img src="players/2.jpg" alt="" srcset="">
+                    <h2 class="text-white font-7 text-center font-bold text-2xl my-3">Kylian Mbappé</h2>
+                    <div class="button-div">
+                        <button id="p2"
+                            class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
+                    </div>
+                </div>
+                <div class="player-3 pb-8 gap-3 bg-gray-900 border"><img src="players/3.jpg" alt="" srcset="">
+                    <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Karim Benzema</h2>
+                    <div class="button-div">
+                        <button id="p3"
+                            class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
+                    </div>
+                </div>
+                <div class="player-4 pb-8 gap-3 bg-gray-900 border"><img src="players/4.jpg" alt="" srcset="">
+                    <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Trent Alexander-Arnold</h2>
+                    <div class="button-div">
+                        <button id="p4"
+                            class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
+                    </div>
+                </div>
+                <div class="player-5 pb-8 gap-3 bg-gray-900 border"><img src="players/5.jpg" alt="" srcset="">
+                    <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Robert Lewandowski</h2>
+                    <div class="button-div">
+                        <button id="p5"
+                            class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
+                    </div>
+                </div>
+                <div class="player-6 pb-8 gap-3 bg-gray-900 border"><img src="players/6.jpg" alt="" srcset="">
+                    <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Riyad Mahrez</h2>
+                    <div class="button-div">
+                        <button id="p6"
+                            class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
+                    </div>
+                </div>
+                <div class="player-7 pb-8 gap-3 bg-gray-900 border"><img src="players/7.jpg" alt="" srcset="">
+                    <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Mohamed Salah</h2>
+                    <div class="button-div">
+                        <button id="p7"
+                            class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
+                    </div>
+                </div>
+                <div class="player-8 pb-8 gap-3 bg-gray-900 border"><img src="players/8.jpg" alt="" srcset="">
+                    <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Luis Suárez</h2>
+                    <div class="button-div">
+                        <button id="p8"
+                            class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
+                    </div>
+                </div>
+                <div class="player-9 pb-8 gap-3 bg-gray-900 border"><img src="players/9.jpg" alt="" srcset="">
+                    <h2 class="my-3 text-white font-7 text-center font-bold text-2xl">Luka Modrić</h2>
+                    <div class="button-div">
+                        <button id="p9"
+                            class="player text-white text-center px-28 py-2 bg-sky-500 rounded-xl mt- 3 ml-10">Select</button>
+                    </div>
+                </div>
+            </div>
+            <!-- selected players and budget -->
+            <div>
+                <!-- All the selected player -->
+                <div class="grid grid-cols-1 ml-4 bg-gray-900 h-2/5">
+                    <h1 class="text-4xl text-center pt-6 h-1/5">Selected--5</h1>
+                    <ol id="olist" class="list-decimal ml-10 text-2xl">
 
-    </section>
+                    </ol>
+                </div>
+                <!-- Budget -->
+                <div class="my-4 ml-4 bg-gray-900 h-2/5 ">
+                    <h1 class="text-4xl text-center pt-6 h-1/5 text-2xl">Budget</h1>
+                    <h3 class="inline mx-4 text-2xl">Per Player</h3>
+                    <input id="cost-per-player"
+                        class="placeholder:italic placeholder:text-slate-400 bg-gray-900 border border-slate-300 rounded-md py-2 "
+                        placeholder="Enter cost in $" type="number">
+                    <button id="Calculate-total-player-cost"
+                        class="bg-sky-500 py-2 rounded px-32 ml-2 mt-4 font-semibold">Calculate</button>
+                    <h3 class="inline mx-4 text-2xl font-bold">Player Expense</h3>
+                    <h3 class="inline mx-4 mt-1.5 text-2xl font-bold">$<span id="total-player-cost"
+                            class="text-cyan-300">00</span>
+                    </h3>
+                    <h3 class="inline mx-4 text-2xl mt-4">Manager</h3>
+                    <input id="manager-cost"
+                        class="placeholder:italic placeholder:text-slate-400 bg-gray-900 border border-slate-300 rounded-md py-2 mt-4 "
+                        placeholder="Enter cost in $" type="number">
+                    <h3 class="inline mx-4 text-2xl mt-4">Coach</h3>
+                    <input id="coach-cost"
+                        class="placeholder:italic placeholder:text-slate-400 bg-gray-900 border border-slate-300 rounded-md py-2 mt-4 "
+                        placeholder="Enter cost in $" type="number">
+                    <button id="total-cost" class="bg-sky-500 px-28 py-3 rounded ml-1.5 mt-4 font-semibold">Calculate
+                        Total</button>
+                    <h3 class="inline mx-4 text-2xl mt-6 font-bold">Total $<span id="total-amount"
+                            class="text-cyan-300">00</span>
+                    </h3>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
     <footer class=" mt-44">
         <hr>
         <h3 class="text-center my-20">Copyright @ 2022 All Rights Reserved.</h3>
