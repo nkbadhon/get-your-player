@@ -169,6 +169,31 @@ document.getElementById('Calculate-total-player-cost').addEventListener('click',
     const totalPlayerShowFieldString = totalPlayerShowField.innerText
     const totalPlayerShowFieldNumber = parseInt(totalPlayerShowFieldString);
 
-    const newTotalPlayerCost = totalPlayerShowFieldNumber + totalPlayerCost;
+    const newTotalPlayerCost = totalPlayerCost;
     totalPlayerShowField.innerText = newTotalPlayerCost;
+
+})
+
+document.getElementById('total-cost').addEventListener('click', function () {
+    // Getting the amount entered by user for the manager
+    const managerField = document.getElementById('manager-cost');
+    const managerFieldString = managerField.value;
+    const managercost = parseInt(managerFieldString);
+
+    // Getting the amount entered by user for the coach
+    const coachField = document.getElementById('coach-cost');
+    const coachFieldString = coachField.value;
+    const coachCost = parseInt(coachFieldString);
+
+    // Getting the total amount for players
+    const playerField = document.getElementById('total-player-cost');
+    const playerFieldString = playerField.innerText;
+    const playerCost = parseInt(playerFieldString);
+
+    totalCost = coachCost + managercost + playerCost
+
+    // Getting the total cost show field
+    const finalShowField = document.getElementById('total-amount');
+    finalShowField.innerText = totalCost
+
 })
